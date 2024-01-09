@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block content %}
+{ % if current_user.is_auntheticated %}
+<p></p>
+{% else %}
+<h2>welcome to Email spam filter</h2>
+<hr>
+<div class="text-center">
+   
+</div>
+<hr>
+<p>Find out more Email spam filter,<button class="btn btn1-default">< href"{{ url_for('main1.about)}}"> CLick Here</a></p></button>
+<hr>
+<p>choose one of the following options to access the application:</p>
+<button class="btn btn-default"><a href ='users.register'><span class="glyphicon glyphicon-log-in"></span> Register</a></button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-default"><a href ='users.login'><span class="glyphicon glyphicon-log-in"></span> Login</a></button>
+ {% endif %}
+ <hr>
+ <p></p>
+ {% endblock content % }
